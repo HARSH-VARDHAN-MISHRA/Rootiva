@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - ROOTIVA</title>
-    <meta property="og:image" content="./assets/images/homeopathy_good_news.jpg">
-    <meta name="title" content="Rootiva Blog - Hair Care Tips, Wellness Advice, and More">
-    <meta name="description" content="Explore Rootiva's blog for valuable insights on hair care, wellness tips, and natural remedies. Stay updated with the latest trends in holistic health and discover how to achieve vibrant, healthy hair the natural way.">
-    <meta name="keywords" content="Rootiva blog, hair care tips, natural remedies, holistic wellness, hair care advice, healthy hair tips">
+    <title>Contact Us - ROOTIVA</title>
+    <!-- <meta property="og:image" content="link-to-contactuspage-image.jpg"> -->
+    <meta name="title" content="Contact Rootiva - Get in Touch with Us">
+    <meta name="description" content="Have questions or feedback? Contact Rootiva's customer support team for assistance with orders, product inquiries, or any other concerns. We're here to help you on your journey to healthier hair and scalp.">
+    <meta name="keywords" content="Rootiva contact, customer support, hair care assistance, product inquiries, feedback, contact information">
+
 
     <!-- -- Google Font  ---  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,42 +50,35 @@
             </div>
         </header>
     </div>
-    
+
     <div class="hero">
     </div>
     
     <div class="main">
-        <section class="container blog">
+        <section class="container contact-us">
             <div class="heading">
-                <h2>Our Blog</h2>
+                <h2>Contact Us</h2>
             </div>
+            <form action="https://formsubmit.co/emaan72@gmail.com" method="POST">
+                <input type="text" placeholder="Name" name="Name" id="Name" required>
+                <input type="email" name="Email" id="Email" placeholder="Email" required>
+                <input type="number" name="Mobile_Number" id="Mobile_Number" placeholder="Mobile Number" required>
+                <textarea name="Message" id="Message" placeholder="Message" required></textarea>
 
-            <div class="blog-grid">
-                <a href="https://www.balanceintohealth.com/blog/Harvard%20Study%20Has%20Good%20News%20for%20Homeopathic%20Medicine" target="_blank" class="single-blog">
-                    <div class="img">
-                        <img src="./assets/images/homeopathy_good_news.jpg" alt="blog-image">
-                        <div class="lab">Medicinal Values</div>
-                    </div>
-                    <h4>Harvard Study Has Good News for Homeopathic Medicine</h4>
-                </a>
-                <a href="https://www.balanceintohealth.com/blog/unveiling-the-power-of-homeopathic-remedies-a-comprehensive-guide-to-combat-colds-and-flu" target="_blank" class="single-blog">
-                    <div class="img">
-                        <img src="./assets/images/Blog-1.jpg" alt="blog-image">
-                        <div class="lab blue">Natural Cures</div>
-                    </div>
-                    <h4>Unveiling the Power of Homeopathic Remedies: A Comprehensive Guide to Cold and Flu Curatives</h4>
-                </a>
-                <a href="https://www.homeopathyschool.com/the-clinic/self-help-remedies/calendula-officinalis/" target="_blank" class="single-blog">
-                    <div class="img">
-                        <img src="./assets/images/Blog-2.jpg" alt="blog-image">
-                        <div class="lab">Natural Cures</div>
-                    </div>
-                    <h4>Benifits of Calendula</h4>
-                </a>
-            </div>
+                <input type="hidden" name="_captcha" value="false">
+                <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5501/contact.html"> -->
+                <input type="hidden" name="_next" value="https://rootiva.me/contact.html">
+                <input type="hidden" name="_template" value="table">
+
+                <button type="submit" class="btn-shop">
+                    <span>Send Message</span>
+                    <i class="fa-solid fa-location-arrow"></i>
+                </button>
+            </form>
+            
         </section>
 
-        <footer>
+        <footer class="test">
             <div class="container">
                 <div class="footer-flex">
                     <a href="./index.html">Home</a>

@@ -82,7 +82,7 @@ ul {
     position: absolute;
     content: "";
     height: 5px;
-    width: 60%;
+    width: 100%;
     bottom: 0;
     right: 0;
     border-radius: 5px;
@@ -91,7 +91,7 @@ ul {
 }
 
 .heading h2:hover::after {
-    width: 65%;
+    width: 100%;
 }
 
 
@@ -188,7 +188,7 @@ header .hamburger {
 }
 
 .hero .grid-2 .shop-now {
-    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.7)), url(../images/Rootiva-Product-Pic-3.jpeg);
+    background-image: linear-gradient(rgb(4 9 30 / 0%), rgb(4 9 30 / 0%)), url(../images/Rootiva-Product-Pic-3.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -400,7 +400,10 @@ footer .copyright span {
 }
 
 
-
+/* ---- Testimonial-[page] --  */
+.test{
+    margin-top: 5rem;
+}
 
 /* ------ Our Stroy [PAGE] -------  */
 .testimonial-grid .content .quote {
@@ -409,7 +412,9 @@ footer .copyright span {
     font-weight: 600;
     color: var(--color-bistre);
 }
-
+.testimonial-grid .content {
+    text-align: center;
+}
 .multiple-images img {
     object-fit: cover;
 }
@@ -513,6 +518,7 @@ footer .copyright span {
 }
 
 
+
 /* ----- Blog [PAGE]  ----  */
 .blog-grid{
     display: grid;
@@ -557,6 +563,34 @@ footer .copyright span {
     background-color: #d1e8ff;
     color: #2968a8;
 }
+
+/* ------ Contact [PAGE] ---  */
+.contact-us form{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.contact-us input ,
+.contact-us textarea {
+    width: 100%;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--color-champagne);
+    outline: none;
+    font-size: 1rem;
+    background: var(--color-champagne);
+}
+.contact-us input:focus ,
+.contact-us textarea:focus{
+    /* background: var(--color-tan); */
+    opacity: 0.9;
+    outline: 1px solid var(--color-bistre);
+}
+
+
+
+
 /* --------- Media Querry -----  */
 
 /* Seprate Navbar Media Querry  */
@@ -650,10 +684,10 @@ footer .copyright span {
         object-fit: cover;
     }
 
-    .heading.seven h2::after {
+    /* .heading.seven h2::after {
         bottom: 0;
         right: 20%;
-    }
+    } */
     .shop-page .grid-2 .pro-detail .paypal {
         padding: 0.5rem 1.5rem;
     }
@@ -662,6 +696,16 @@ footer .copyright span {
 @media only screen and (max-width: 500px) {
     .ingredientes-flex .single-ingredient {
         flex-basis: 45%;
+    }
+    .test{
+        margin-top: 0rem;
+    }
+    .contact-us form {
+        width: 100%;
+    }
+    .contact-us .btn-shop {
+        width: 80%;
+        margin: auto;
     }
 }
 
@@ -695,3 +739,5 @@ footer .copyright span {
         padding: 0.4rem 1rem;
     }
 }
+
+
