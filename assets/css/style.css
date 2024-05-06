@@ -402,7 +402,7 @@ footer .copyright span {
 
 /* ---- Testimonial-[page] --  */
 .test{
-    margin-top: 5rem;
+    margin-top: 15rem;
 }
 
 /* ------ Our Stroy [PAGE] -------  */
@@ -420,7 +420,7 @@ footer .copyright span {
 }
 
 
-/* ----- Shop Page  -----  */
+/* ----- Shop [Page]  -----  */
 .shop-page .grid-2 {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -430,7 +430,7 @@ footer .copyright span {
 
 .shop-page .grid-2 .image-section img ,
 .shop-page .grid-2 .image-section video {
-    max-height: 500px;
+    /* max-height: 500px; */
     object-fit: cover;
 }
 .shop-page .grid-2 .pro-detail{
@@ -545,8 +545,9 @@ footer .copyright span {
     object-fit: cover;
     width: 100%;
 }
-.blog-grid .single-blog h4{
-    color: var(--color-tan);
+.blog-grid .single-blog h4 {
+    color: var(--color-drab-dark);
+    text-align: center;
 }
 .blog-grid .single-blog .img .lab{
     position: absolute;
@@ -719,6 +720,9 @@ footer .copyright span {
     }
     .blog-grid {
         grid-template-columns: repeat(1,1fr);
+    }
+    .blog-grid .single-blog h4 {
+        text-align: start;
     }
 }
 
